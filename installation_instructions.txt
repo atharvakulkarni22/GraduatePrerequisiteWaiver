@@ -1,12 +1,13 @@
 Instructions for running the batch file to get the accuracy of text matching algorithms - 
 1) Download the 'DB_Project_Get_Model_Accuracy' folder which has the test dataset. 
-2) Run the install_libraries.py file
+2) Run the 'install_libraries.py' file
 3) If there are errors in installing gensim library because of the 'Microsoft Visual Studio Version 14 needed' error follow the instructions in this link.
 (https://stackoverflow.com/questions/44951456/pip-error-microsoft-visual-c-14-0-is-required)
-4) Open the db_project_batch.py file and change the path (line 23) to the path where you have downloaded the dataset.
-5) Run the db_project_batch.py file, the overall accuracy of the three text matching methods will be printed. 
-6) Note - It will take a while for the code to run.
-7) If you want to add/remove from the dataset, please add/remove the label of the file you have added/removed from the dataset in the correct_list dictionary on line 21.
+4) Close and restart the IDE after installing the required libraries.
+5) Open the 'db_project_batch.py' file and change the path (line 23) to the path where you have downloaded the dataset.
+6) Run the 'db_project_batch.py' file, the overall accuracy of the three text matching methods will be printed. 
+7) Note - It will take a while for the code to run.
+8) If you want to add/remove from the dataset, please add/remove the label of the file you have added/removed from the dataset in the correct_list dictionary on line 21.
 
 Instructions for testing the prototype web application -  
 1) Download and configure the Apache web server.(Detailed instructions given below)
@@ -18,7 +19,7 @@ Instructions for testing the prototype web application -
 7) Click on the 'Request Prerequisite Waiver' button.
 8) In the webpage that appears, select the prerequisite you want to waive off.
 9) Then click on the 'Choose file' button and upload the related undergrad syllabus file in pdf format. We have added some files in the 'Prototype Test Files' folder from where you can chose one to test.
-10) Open a python terminal and run the db_project_check.py file.
+10) Open a python terminal and run the 'db_project_check.py' file.
 10) Click the 'Request Waiver' button.
 11) The text matching algorithm will take some time to run and it will give the output whether the prerequisite was waived off or not.
 12) Go back to the home page and if the prerequsite was approved, the prerequisite course would have been removed from the list of courses and some new courses would have been unlocked.
