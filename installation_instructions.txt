@@ -12,9 +12,9 @@ Instructions for running the batch file to get the accuracy of text matching alg
 Instructions for testing the prototype web application -  
 1) Download and configure the Apache web server.(Detailed instructions given below)
 2) Download PHP
-3) Run steps 3 and 4 given above if not already done.
+3) Run steps 2, 3 and 4 given above if not already done.
 4) Open the login page.
-5) Enter the credentials of any student mentioned in the mock student dataset.
+5) Enter the credentials of any student mentioned in the mock student dataset (Check student_details.csv).
 6) You can view the courses available to the student and the prerequisites assigned in the home page.
 7) Click on the 'Request Prerequisite Waiver' button.
 8) In the webpage that appears, select the prerequisite you want to waive off.
