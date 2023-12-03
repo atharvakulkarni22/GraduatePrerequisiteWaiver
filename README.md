@@ -7,6 +7,6 @@ Tools used: Python libraries - NLTK, Scikit-Learn, Gensim, Flask; HTML; CSS; Jav
 
 
 Please view the 'installation_instructions.txt' file first.
-Project Documentation can be viewed in 'Project Report' file.
+Project Documentation can be viewed in 'DB_project_final_report' file.
 
 
