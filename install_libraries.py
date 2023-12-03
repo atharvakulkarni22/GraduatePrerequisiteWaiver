@@ -3,7 +3,7 @@ import sys
 
 # Install packages
 subprocess.run([sys.executable, "-m", "pip", "install", "numpy"])
-subprocess.run([sys.executable, "-m", "pip", "install", "sklearn"])
+subprocess.run([sys.executable, "-m", "pip", "install", "scikit-learn"])
 subprocess.run([sys.executable, "-m", "pip", "install", "flask"])
 subprocess.run([sys.executable, "-m", "pip", "install", "flask_cors"])
 subprocess.run([sys.executable, "-m", "pip", "install", "scipy"])
