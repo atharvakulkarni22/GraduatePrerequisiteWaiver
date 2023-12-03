@@ -5,24 +5,27 @@ Instructions for running the batch file to get the accuracy of text matching alg
 (https://stackoverflow.com/questions/44951456/pip-error-microsoft-visual-c-14-0-is-required)
 4) Close and restart the IDE after installing the required libraries.
 5) Open the 'db_project_batch.py' file and change the path (line 23) to the path where you have downloaded the dataset.
-6) Run the 'db_project_batch.py' file, the overall accuracy of the three text matching methods will be printed. 
-7) Note - It will take a while for the code to run.
-8) If you want to add/remove from the dataset, please add/remove the label of the file you have added/removed from the dataset in the correct_list dictionary on line 21.
+6) Run the 'db_project_batch.py' file, the overall accuracy of the three text matching methods will be printed. Note - It will take a while for the code to run.
+7) If you want to add/remove from the dataset, please add/remove the label of the file you have added/removed from the dataset in the correct_list dictionary on line 21.
 
 Instructions for testing the prototype web application -  
 1) Download and configure the Apache web server.(Detailed instructions given below)
 2) Download PHP
 3) Run steps 2, 3 and 4 given above if not already done.
-4) Open the login page.
-5) Enter the credentials of any student mentioned in the mock student dataset (Check student_details.csv).
-6) You can view the courses available to the student and the prerequisites assigned in the home page.
-7) Click on the 'Request Prerequisite Waiver' button.
-8) In the webpage that appears, select the prerequisite you want to waive off.
-9) Then click on the 'Choose file' button and upload the related undergrad syllabus file in pdf format. We have added some files in the 'Prototype Test Files' folder from where you can chose one to test.
-10) Open a python terminal and run the 'db_project_check.py' file.
-10) Click the 'Request Waiver' button.
-11) The text matching algorithm will take some time to run and it will give the output whether the prerequisite was waived off or not.
-12) Go back to the home page and if the prerequsite was approved, the prerequisite course would have been removed from the list of courses and some new courses would have been unlocked.
+4) Open the 'Mock Database' folder, copy the contents of the 'SQL Script.txt' file and run in MySQL to create the database and the database.
+5) Go to the schemas in MySQL, select the 'student_prerequisites' database, expand the tables, right click on the tables one by one; and use the Table Data Import Wizard to import the mock data from the 'students.csv', 'courses.csv', 'prerequisites.csv', and 'student_courses.csv' files into the corresponding tables in this order. This will create the mock database used for our application.
+6) Go to the location where you have installed the Apache webserver and go to the htdocs folder. Copy paste the contents of the 'Web Application' folder in this location.
+7) Open the files - 'get_courses.php', 'get_prerequisites.php' and 'LoginUser.php' and change the password of the database connection to you MySQL password.
+8) Open a python terminal and run the 'db_project_check.py' file.
+9) Open the 'index' webpage and enter any user credentials mentioned in the 'students.csv' file.
+10) You can view the courses available to the student and the prerequisites assigned in the home page.
+11) Click on the 'Request Prerequisite Waiver' button.
+12) In the webpage that appears, select the prerequisite you want to waive off.
+13) Then click on the 'Choose file' button and upload the related undergrad syllabus file in pdf format. We have added some files in the 'Prototype Test Files' folder from where you can chose one to test.
+14) Click the 'Request Waiver' button.
+15) Wait for around 2 minutes; you will be redirected to the home page.
+16) If the prerequsite was waived off, it would have been removed from the list of prerequiste courses and some new courses would have been unlocked.
+17) We have added some files for you to test on in the 'Test files' folder.
 
 Instructions for downloading Apache Webserver and  PHP (You can alternatively use this video as a guide - https://youtu.be/TBlKfAwxW7Q?si=vNCKH9uVi566_9RQ) - 
 1) To install apache web server go to https://www.apachelounge.com/download/ website and download the apache server based on the system configuration.
