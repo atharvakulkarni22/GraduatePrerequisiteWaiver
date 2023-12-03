@@ -5,6 +5,7 @@ import sys
 subprocess.run([sys.executable, "-m", "pip", "install", "numpy"])
 subprocess.run([sys.executable, "-m", "pip", "install", "sklearn"])
 subprocess.run([sys.executable, "-m", "pip", "install", "flask"])
+subprocess.run([sys.executable, "-m", "pip", "install", "flask_cors", "pymysql"])
 subprocess.run([sys.executable, "-m", "pip", "install", "scipy"])
 subprocess.run([sys.executable, "-m", "pip", "install", "nltk"])
 subprocess.run([sys.executable, "-m", "pip", "install", "gensim"])
