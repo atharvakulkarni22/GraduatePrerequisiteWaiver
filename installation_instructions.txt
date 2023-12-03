@@ -15,9 +15,9 @@ Instructions for testing the prototype web application -
 4) Open the 'Mock Database' folder, copy the contents of the 'SQL Script.txt' file and run in MySQL to create the database and the database.
 5) Go to the schemas in MySQL, select the 'student_prerequisites' database, expand the tables, right click on the tables one by one; and use the Table Data Import Wizard to import the mock data from the 'students.csv', 'courses.csv', 'prerequisites.csv', and 'student_courses.csv' files into the corresponding tables in this order. This will create the mock database used for our application.
 6) Go to the location where you have installed the Apache webserver and go to the htdocs folder. Copy paste the contents of the 'Web Application' folder in this location.
-7) Open the files - 'get_courses.php', 'get_prerequisites.php' and 'LoginUser.php' and change the password of the database connection to you MySQL password.
-8) Run the 'main.py' file. Wait till '' is displayed on the terminal.
-9) Open the 'index' webpage and enter any user credentials mentioned in the 'students.csv' file.
+7) Open the files - 'get_courses.php', 'get_prerequisites.php' and 'LoginUser.php' and change the password of the database connection to your MySQL password.
+8) Run the 'main.py' file. Wait till the debugger pin is displayed on the terminal.
+9) Open a browser and go to http://localhost and enter any user credentials mentioned in the 'students.csv' file.
 10) You can view the courses available to the student and the prerequisites assigned in the home page.
 11) Click on the 'Request Prerequisite Waiver' button.
 12) In the webpage that appears, select the prerequisite you want to waive off.
