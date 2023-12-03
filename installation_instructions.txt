@@ -16,16 +16,16 @@ Instructions for testing the prototype web application -
 5) Go to the schemas in MySQL, select the 'student_prerequisites' database, expand the tables, right click on the tables one by one; and use the Table Data Import Wizard to import the mock data from the 'students.csv', 'courses.csv', 'prerequisites.csv', and 'student_courses.csv' files into the corresponding tables in this order. This will create the mock database used for our application.
 6) Go to the location where you have installed the Apache webserver and go to the htdocs folder. Copy paste the contents of the 'Web Application' folder in this location.
 7) Open the files - 'get_courses.php', 'get_prerequisites.php' and 'LoginUser.php' and change the password of the database connection to your MySQL password.
-8) Run the 'main.py' file. Wait till the debugger pin is displayed on the terminal.
-9) Open a browser and go to http://localhost and enter any user credentials mentioned in the 'students.csv' file.
-10) You can view the courses available to the student and the prerequisites assigned in the home page.
-11) Click on the 'Request Prerequisite Waiver' button.
-12) In the webpage that appears, select the prerequisite you want to waive off.
-13) Then click on the 'Choose file' button and upload the related undergrad syllabus file in pdf format. We have added some files in the 'Prototype Test Files' folder from where you can chose one to test.
-14) Click the 'Request Waiver' button.
-15) Wait for around 2 minutes; you will be redirected to the home page.
-16) If the prerequsite was waived off, it would have been removed from the list of prerequiste courses and some new courses would have been unlocked.
-17) We have added some files for you to test on in the 'Test files' folder.
+8) Change the password of the database connection to your MySQL password in 'main.py'. (line - 109)
+9) Run the 'main.py' file. Wait till the debugger pin is displayed on the terminal.
+10) Open a browser and go to http://localhost and enter any user credentials mentioned in the 'students.csv' file.
+11) You can view the courses available to the student and the prerequisites assigned in the home page.
+12) Click on the 'Request Prerequisite Waiver' button.
+13) In the webpage that appears, select the prerequisite you want to waive off.
+14) Then click on the 'Choose file' button and upload the related undergrad syllabus file in pdf format. We have added some files in the 'Prototype Test Files' folder from where you can chose one to test.
+15) Click the 'Request Waiver' button.
+16) Wait for around 2 minutes; you will be redirected to the home page.
+17) If the prerequsite was waived off, it would have been removed from the list of prerequiste courses and some new courses would have been unlocked.
 
 Instructions for downloading Apache Webserver and  PHP (You can alternatively use this video as a guide - https://youtu.be/TBlKfAwxW7Q?si=vNCKH9uVi566_9RQ) - 
 1) To install apache web server go to https://www.apachelounge.com/download/ website and download the apache server based on the system configuration.
